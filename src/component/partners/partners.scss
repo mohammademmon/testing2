@@ -1,0 +1,27 @@
+#partners {
+  background-color: $primary_bg;
+  .title {
+    h2 {
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      color: $dark2_color;
+    }
+  }
+  .content{
+    margin-top: 40px;
+    .slider{
+        border: 1px solid $partnerslider;
+        padding: 42px 30px;
+        width: 95% !important;
+        @include media-breakpoint-down(md){
+          width: 100% !important;
+        }
+        img{
+            width: 220px;
+            height: 125px;
+        }
+    }
+  }
+}

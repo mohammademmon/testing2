@@ -1,0 +1,186 @@
+#cus_experience {
+  padding: 120px 0 0;
+  background-color: $primary_bg;
+  @include media-breakpoint-down(md){
+    padding-top: 50px;
+  }
+  .left {
+    position: relative;
+    @include media-breakpoint-down(lg){
+      display: flex;
+      justify-content: center;
+    }
+    .image {
+      width: 100%;
+      height: 570px;
+      border-radius: 250px 250px 8px 8px;
+      @include media-breakpoint-down(lg){
+        width: 80%;
+      }
+      @include media-breakpoint-down(xs){
+        height: 30vh;
+        width: 100%;
+      }
+    }
+    .overlay {
+      position: absolute;
+      bottom: -106px;
+      right: -65px;
+      width: 241px;
+      height: 241px;
+      background-color: $primary_color;
+      border: 15px solid $white_color;
+      border-radius: 0px 100px 0 0;
+      @include media-breakpoint-up(lg){
+        right: -50px;
+        bottom: -80px;
+        width: 200px;
+        height: 200px;
+        border-radius: 0 60px 0 0;
+        border: 15px solid $white_color;
+      }
+      @include media-breakpoint-down(lg){
+        right: 0;
+        bottom: -50px;
+        width: 170px;
+        height: 170px;
+        border-radius: 0 40px 0 0;
+        border: 5px solid $white_color;
+      }
+      .text {
+        h3 {
+          font-size: 42px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          color: $white_color;
+          @include media-breakpoint-down(lg){
+            font-size: 30px;
+          }
+          span {
+            &:last-child{
+                display: block;
+            }
+          }
+        }
+        p {
+          margin-top: 16px;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          color: $white_color;
+          @include media-breakpoint-down(lg){
+            font-size: 16px;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+  .right {
+    @include media-breakpoint-down(lg){
+      margin-top: 100px;
+    }
+    .text {
+      margin-bottom: 16px;
+      h3 {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: $dark_color;
+        @include media-breakpoint-down(xs){
+          font-size: 30px;
+        }
+        span {
+          color: $primary_color;
+        }
+      }
+      p {
+        margin-top: 24px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        color: $primary_textcolor;
+        @include media-breakpoint-down(xs){
+          font-size: 16px;
+        }
+      }
+    }
+    .data {
+      margin-bottom: 40px;
+      p {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
+        color: $primary_textcolor;
+        @include media-breakpoint-down(xs){
+          font-size: 16px;
+        }
+        span {
+          margin-right: 16px;
+          @include media-breakpoint-down(xs){
+            margin-right: 5px;
+          }
+          svg {
+            fill: $primary_textcolor;
+            width: 24px;
+            height: 24px;
+            @include media-breakpoint-down(xs){
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+    .button{
+        button{
+            padding: 18px 32px;
+            background-color: $transparent;
+            border: 1px solid $primary_color;
+            border-radius: 8px;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            color: $primary_color;
+            transition: all ease-in-out .5s;
+            @include media-breakpoint-down(xs){
+              padding: 10px 22px;
+              font-size: 18px;
+            }
+            &:hover{
+                border: 1px solid $transparent;
+                background-color: $primary_color;
+                color: $white_color;
+                box-shadow: 10px 10px 10px $primary_color;
+            }
+        }
+    }
+    .number{
+        margin-top: 40px;
+        .items{
+            h3{
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                color: $dark_color;
+            }
+            h4{
+                margin-top: 11px;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+                color: $primary_textcolor;
+                text-transform: capitalize;
+            }
+        }
+    }
+  }
+}

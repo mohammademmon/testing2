@@ -1,0 +1,86 @@
+#blog {
+  padding: 60px 0 120px;
+  @include media-breakpoint-down(lg){
+    padding-bottom: 60px;
+  }
+  background-color: $primary_bg;
+  .blog_top {
+    h2 {
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 24px;
+      color: $dark2_color;
+    }
+    p {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      color: $primary_textcolor;
+      padding: 0 300px;
+      @include media-breakpoint-down(xl){
+        padding: 0 50px;
+      }
+      @include media-breakpoint-down(lg){
+        padding: 0;
+      }
+    }
+  }
+  #blogslider {
+    margin-top: 40px;
+    @include media-breakpoint-between(xs, md){
+      padding: 0 30px;
+    }
+    .sliders {
+      width: 95% !important;
+      padding: 22px;
+      border: 1px solid $slider_border;
+      border-radius: 8px;
+      .img {
+        img {
+          border-radius: 8px;
+          width: 100%;
+        }
+      }
+      .text {
+        margin: 22px 0 26px;
+        p {
+          font-family: DM Sans;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px;
+          color: $footer_text;
+          span {
+            margin-right: 8px;
+            svg {
+              fill: $footer_text;
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+        h3 {
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          color: $footer_menu;
+        }
+      }
+      .cus_btn {
+        button {
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 26px;
+          text-decoration-line: underline;
+          border: 0;
+          background-color: $transparent;
+        }
+      }
+    }
+  }
+}

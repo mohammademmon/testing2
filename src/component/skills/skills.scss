@@ -1,0 +1,125 @@
+#skills{
+    padding: 120px 0 0;
+    background-color: $primary_bg;
+    @include media-breakpoint-down(md){
+        padding: 50px 0;
+    }
+    .text{
+        padding-right: 80px;
+        @include media-breakpoint-down(md){
+            padding-right: 0;
+        }
+        h3{
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            color: $dark_color;
+            text-transform: capitalize;
+            @include media-breakpoint-down(xs){
+                font-size: 30px;
+            }
+            span{
+                color: $primary_color;
+            }
+        }
+        p{
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            color: $primary_textcolor;
+            margin-top: 24px;
+        }
+        button{
+            padding: 18px 32px;
+            background-color: $primary_color;
+            border-radius: 8px;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            border: 0;
+            color: $white_color;
+            @include media-breakpoint-down(md){
+                padding: 10px 22px;
+            }
+        }
+    }
+    .content{
+        @include media-breakpoint-down(lg){
+            margin-top: 30px;
+        }
+        .items{
+            border-radius: 8px;
+            background: $white_color;
+            box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.10);
+            padding: 24px;
+            padding-right: 58px;
+            margin-bottom: 24px;
+            cursor: pointer;
+            transition: all ease-in-out .5s;
+            @include media-breakpoint-down(xl){
+                padding: 18px;
+                padding-right: 0;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+            &:hover{
+                transform: translateX(20px);
+            }
+            .row{
+                .icon{
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                    background-color: $primary_color;
+                    transition: all ease-in-out .3s;
+                    @include media-breakpoint-down(md){
+                        margin: 0 auto;
+                    }
+                    svg{
+                        width: 30px;
+                        height: 30px;
+                        transition: all ease-in-out .3s;
+                    }
+                }
+                .c_text{
+                    @include media-breakpoint-down(md){
+                        margin-top: 20px;
+                    }
+                    h3{
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        color: $dark_color;
+                        transition: all ease-in-out .3s;
+                        @include media-breakpoint-down(xs){
+                            font-size: 20px;
+                        }
+                    }
+                    p{
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 30px;
+                        color: $primary_textcolor;
+                        margin-top: 8px;
+                        transition: all ease-in-out .3s;
+                        @include media-breakpoint-down(xl){
+                            font-size: 16px;
+                        }
+                        @include media-breakpoint-down(lg){
+                            font-size: 18px;
+                        }
+                        @include media-breakpoint-down(xs){
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
